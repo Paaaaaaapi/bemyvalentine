@@ -1,0 +1,48 @@
+body {
+    background-image: url(https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGhxNnBncnd6aHd1MnVzajI0ZXAzbHpudnIzdWRobjVtZDJid294biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ZpzobHN9EA99LOnuJd/giphy.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/* New container to stack elements */
+#container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+    text-align: center;
+}
+
+#gif-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    margin-top: 20px; /* Space between GIF and button */
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+#text-container {
+    margin-top: 20px; /* Space between button and text */
+    font-size: 18px;
+}
