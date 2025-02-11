@@ -21,9 +21,27 @@ body {
 }
 
 #gif-container img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;  /* Makes the GIF responsive */
+    max-width: 400px; /* Limits max size for larger screens */
+    height: auto; /* Maintains aspect ratio */
+    display: block;
+    margin: 0 auto; /* Centers the GIF */
 }
+
+/* Media Query for smaller screens (e.g., smartphones) */
+@media screen and (max-width: 600px) {
+    #gif-container img {
+        max-width: 300px; /* Reduce size for small screens */
+    }
+}
+
+/* Media Query for extra small screens (e.g., very small phones) */
+@media screen and (max-width: 400px) {
+    #gif-container img {
+        max-width: 250px; /* Further reduce size */
+    }
+}
+
 
 button {
     margin-top: 20px; /* Space between GIF and button */
@@ -40,6 +58,11 @@ button {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+}
+
+button.active {
+    box-shadow: 0px 0px 0px 0px;
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 #text-container {
